@@ -343,3 +343,35 @@ body.dark {
   background-color: var(--accent);
   transform: scale(1.1);
 }
+
+/* Solutions Page Styling */
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.solution-card {
+  background: var(--card-bg, #fff);
+  color: var(--text-color, #333);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.solution-card h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color, #1a73e8);
+}
+
+.solution-card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
