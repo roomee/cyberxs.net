@@ -3,7 +3,7 @@
   --surface: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
   --muted: #9fb0c8;
   --text: #e6eef8;
-  --primary: #5b8cff;
+  --primary: #4e608d;
   --accent: #6ac934;
   /*
   --accent: #00d4b8;
@@ -155,7 +155,12 @@ h1 {
   box-shadow: 0 6px 20px rgba(2, 6, 23, 0.5);
   background: #f5ececec;
 }
-
+.product:hover {
+  transform: translateY(-3px);
+}
+.product img:hover {
+  transform: translateY(-3px);
+}
 /* Footer */
 .footer {
   margin-top: 40px;
@@ -177,7 +182,7 @@ select {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(129, 118, 118, 0.322);
   background: transparent;
   color: var(--text);
 }
@@ -398,7 +403,8 @@ body.dark {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.card h3 {
+.card h3,
+.card h4 {
   margin-bottom: 8px;
   font-size: 1.3rem;
   color: var(--secondary-color, #222);
