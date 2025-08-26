@@ -147,6 +147,14 @@ h1 {
 
   box-shadow: 0 6px 20px rgba(2, 6, 23, 0.5);
 }
+.product img {
+  margin-top: 10px;
+  padding: 1px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.5);
+  background: #f5ececec;
+}
 
 /* Footer */
 .footer {
