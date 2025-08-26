@@ -14,65 +14,108 @@
     <header class="container header">
       <div class="logo">
         <img src="assets/images/logo.png" alt="CyberXS logo" />
-        <div style="font-weight: 700; margin-left: 8px"></div>
       </div>
-      <!-- Dark/Light Toggle -->
       <button class="theme-toggle">🌙</button>
-
-      <!-- Sticky CTA -->
       <a href="contact.html" class="sticky-cta">Inquiry</a>
-
-      <!-- Hamburger Menu -->
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
+      <div class="hamburger"><span></span><span></span><span></span></div>
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="solutions.html">Solutions</a>
-        <a href="news.html">News</a>
+        <a href="news.html" class="active">News</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="small-cta">Contact</a>
         <a href="#">Request Demo</a>
       </nav>
     </header>
+
     <main class="container">
-      <h1>News</h1>
-      <p class="lead">Latest updates and press.</p>
-      <div class="card" style="margin-bottom: 12px">
-        <img src="" alt="news" />
-        <h3>News 1</h3>
-        <p class="lead">Summary about brand update 1 and analyst mention.</p>
-      </div>
-      <div class="card" style="margin-bottom: 12px">
-        <img src="" alt="news" />
-        <h3>News 2</h3>
-        <p class="lead">Summary about brand update 2 and analyst mention.</p>
-      </div>
-      <div class="card" style="margin-bottom: 12px">
-        <img src="" alt="news" />
-        <h3>News 3</h3>
-        <p class="lead">Summary about brand update 3 and analyst mention.</p>
-      </div>
-      <div class="card" style="margin-bottom: 12px">
-        <img src="" alt="news" />
-        <h3>News 4</h3>
-        <p class="lead">Summary about brand update 4 and analyst mention.</p>
-      </div>
-      <div class="card" style="margin-bottom: 12px">
-        <img src="" alt="news" />
-        <h3>News 5</h3>
-        <p class="lead">Summary about brand update 5 and analyst mention.</p>
-      </div>
-      <div class="card" style="margin-bottom: 12px">
-        <img src="" alt="news" />
-        <h3>News 6</h3>
-        <p class="lead">Summary about brand update 6 and analyst mention.</p>
-      </div>
+      <h1>News & Insights</h1>
+      <p class="lead">
+        Stay informed with the latest updates from our partners and
+        cybersecurity world-wide.
+      </p>
+
+      <!-- Brand-Specific News -->
+      <section class="brand-news">
+        <h2>Brand & Product Updates</h2>
+
+        <div class="card">
+          <h3>Logsign</h3>
+          <p class="lead">
+            A critical vulnerability (CVE-2025-1044, CVSS 9.8) was discovered in
+            Logsign's Unified SecOps Platform, allowing authentication bypass.
+            The vendor released version <strong>6.4.32</strong> with a
+            patch—organizations are encouraged to update
+            immediately.:contentReference[oaicite:0]{index=0}
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Logsign (Release Update)</h3>
+          <p class="lead">
+            In a recent update (v6.4.50), Logsign improved log data accuracy
+            from Aruba switches, added Ubiquiti U6 Plus plugin support, and
+            enhanced API integration with IBM QRadar and
+            Forescout.:contentReference[oaicite:1]{index=1}
+          </p>
+        </div>
+      </section>
+
+      <!-- Industry-Wide Cybersecurity News -->
+      <section class="industry-news">
+        <h2>Global Cybersecurity Headlines</h2>
+
+        <div class="card">
+          <h3>New Pakistan-Based Malware Syndicate Discovered</h3>
+          <p class="lead">
+            CloudSEK researchers uncovered a Pakistan-based malware network
+            distributing infostealers via pirated software. The operation
+            impacted nearly 1.9 million devices and generated ~$4.7M via
+            SEO-poisoning and affiliate
+            channels.:contentReference[oaicite:2]{index=2}
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Active Cyber Operations Linked to Pakistani Threat Actors</h3>
+          <p class="lead">
+            Indian cybersecurity sources claim that Pakistani-linked APT group
+            "SideCopy" (offshoot of APT36) has targeted critical sectors using
+            Microsoft Installer (MSI) RAT attacks (Xeno, Spark,
+            CurlBack).:contentReference[oaicite:3]{index=3}
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Interpol Arrests Over 1,200 in Africa Cybercrime Crackdown</h3>
+          <p class="lead">
+            Operation Serengeti 2.0 netted over 1,200 suspects in a major
+            cybercrime operation across Africa—highlighting continued global law
+            enforcement collaboration.:contentReference[oaicite:4]{index=4}
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Apple Patches Critical Zero-Day Vulnerability</h3>
+          <p class="lead">
+            Apple released urgent iOS/macOS updates to address an actively
+            exploited zero-day vulnerability, underscoring the importance of
+            timely patching.:contentReference[oaicite:5]{index=5}
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Docker Desktop Vulnerability Enables Host Takeover</h3>
+          <p class="lead">
+            A serious flaw in Docker Desktop allows attackers to escalate
+            privileges and gain admin access on host systems—users are advised
+            to patch immediately.:contentReference[oaicite:6]{index=6}
+          </p>
+        </div>
+      </section>
     </main>
+
     <footer class="footer container">
       <div class="social-links">
         <a href="#" target="_blank" class="social-icon linkedin">
@@ -86,6 +129,7 @@
         <div>© 2025 CyberXS — “trusted by customers”</div>
       </div>
     </footer>
+
     <script src="assets/js/app.js"></script>
   </body>
 </html>
