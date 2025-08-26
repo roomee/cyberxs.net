@@ -373,7 +373,7 @@ body.dark {
 
 .solution-card h3 {
   margin-bottom: 10px;
-  color: var(--primary-color, #1a73e8);
+  color: var(--primary-color, #143b6d);
 }
 
 .solution-card p {
@@ -386,7 +386,7 @@ body.dark {
 .industry-news h2 {
   margin-top: 2rem;
   font-size: 1.6rem;
-  color: var(--primary-color, #1a73e8);
+  color: var(--primary-color, #2a5ea1);
 }
 
 .card {
