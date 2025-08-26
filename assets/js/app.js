@@ -12,3 +12,21 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Theme toggle
+  const toggleBtn = document.querySelector(".theme-toggle");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    toggleBtn.textContent = document.body.classList.contains("dark")
+      ? "☀️"
+      : "🌙";
+  });
+
+  // Mobile menu toggle
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".nav");
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+});

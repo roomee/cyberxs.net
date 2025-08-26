@@ -4,7 +4,10 @@
   --muted: #9fb0c8;
   --text: #e6eef8;
   --primary: #5b8cff;
+  --accent: #6ac934;
+  /*
   --accent: #00d4b8;
+  */
 }
 * {
   box-sizing: border-box;
@@ -60,6 +63,7 @@ a {
 .nav {
   display: flex;
   align-items: center;
+  margin-right: 100px;
 }
 .nav a {
   color: #071026;
@@ -195,4 +199,137 @@ select {
   .product-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
+}
+
+/* Sticky CTA Button */
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+.sticky-cta:hover {
+  background: var(--primary);
+  transform: scale(1.05);
+}
+
+/* Dark/Light Mode Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: #eee;
+  color: #071026;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  z-index: 1001;
+}
+body.dark {
+  --bg: #ffffff;
+  --surface: rgba(0, 0, 0, 0.02);
+  --text: #071026;
+  --muted: #333;
+  --primary: #071026;
+  background: #fff;
+  color: #071026;
+}
+
+/* Animated Nav Hover */
+.nav a {
+  position: relative;
+  overflow: hidden;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Mobile Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 24px;
+  height: 3px;
+  background: #071026;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #fff;
+    width: 220px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease;
+  }
+  .nav.open {
+    right: 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+.social-links {
+  display: list-item;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon.linkedin {
+  color: #0a66c2;
+}
+
+.social-icon.twitter {
+  color: #000000; /* X uses black now */
+}
+
+.social-icon:hover {
+  background-color: var(--accent);
+  transform: scale(1.1);
 }
